@@ -11,17 +11,17 @@ public class PlayerMovement : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
         transform.Rotate(0, 0, -Input.GetAxisRaw("Horizontal") * 100f * Time.deltaTime);
 
         if(Input.GetAxis("Vertical") > 0)
         {
             rb2d.AddForce(transform.up * 5f * Input.GetAxisRaw("Vertical"));
-            Network.Move(Input.GetAxisRaw("Vertical"), Input.GetAxisRaw("Horizontal"));
         }
         else
         {
             rb2d.velocity = Vector2.zero;
         }
+        Network.Move(Input.GetAxisRaw("Vertical"), Input.GetAxisRaw("Horizontal"));
     }
 }

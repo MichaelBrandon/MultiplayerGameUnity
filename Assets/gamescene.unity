@@ -236,6 +236,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ccf4a83a7d0488646b625f6c0185b727, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1128813279 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1816191561203890, guid: ccf4a83a7d0488646b625f6c0185b727,
+    type: 2}
+  m_PrefabInternal: {fileID: 1128813278}
 --- !u!1 &2068001464
 GameObject:
   m_ObjectHideFlags: 0
@@ -246,6 +251,7 @@ GameObject:
   - component: {fileID: 2068001467}
   - component: {fileID: 2068001466}
   - component: {fileID: 2068001465}
+  - component: {fileID: 2068001468}
   m_Layer: 0
   m_Name: Network
   m_TagString: Untagged
@@ -266,6 +272,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 1949380458592658, guid: e7c93a682d082134aae6dfd6d3b9dbd8,
     type: 2}
+  spawner: {fileID: 2068001468}
 --- !u!114 &2068001466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -296,3 +303,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2068001468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2068001464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e15b7201a18f67e45978932e97c1ce19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localPlayer: {fileID: 1128813279}
+  playerPrefab: {fileID: 1949380458592658, guid: e7c93a682d082134aae6dfd6d3b9dbd8,
+    type: 2}
+  socket: {fileID: 2068001466}

@@ -11,8 +11,9 @@ public class PlayerMovementNetwork : MonoBehaviour {
         rb2d = GetComponent<Rigidbody2D>();	
 	}
 	
+    
 	// Update is called once per frame
-	void Update () {
+	public void FixedUpdate () {
         transform.Rotate(0, 0, -h * 100f * Time.deltaTime);
 
         if (v > 0)
