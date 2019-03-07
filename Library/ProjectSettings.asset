@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 15
-  productGUID: ac52556fcbe9097468c571ee253dcc35
+  productGUID: 4ad79e90472962448af8a2ada090e865
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: MultiplayerGame
+  productName: MultiPlayerGame
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -619,9 +619,9 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: fa59f8eb-b6e5-4507-934a-2312eafff773
-  projectName: MultiplayerGame
-  organizationId: aleginger
+  cloudProjectId: 469f30f6-eb27-4833-a62d-019a995aa56f
+  projectName: MultiPlayerGame
+  organizationId: jordantron
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0

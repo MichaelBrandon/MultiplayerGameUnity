@@ -6,25 +6,39 @@ public class PlayerMovementNetwork : MonoBehaviour {
     Rigidbody2D rb2d;
     public float v;
     public float h;
-	// Use this for initialization
-	void Start () {
-        rb2d = GetComponent<Rigidbody2D>();	
+    public bool isMoving;
+    // Use this for initialization
+    void Start () {
+        rb2d = GetComponent<Rigidbody2D>();
+        isMoving = false;
 	}
 	
-    
 	// Update is called once per frame
-	public void FixedUpdate () {
-        transform.Rotate(0, 0, -h * 100f * Time.deltaTime);
-
-        if (v > 0)
+	public void Update () {
+        
+        transform.Rotate(0,0, -h * 100f * Time.deltaTime);
+      
+        if ( v > 0)
         {
             rb2d.AddForce(transform.up * 5f * v);
-            //Network.Move(v, h);
+            //Network.Move(v,h);
+            isMoving = true;
+            Debug.Log("Key Down");
+
         }
         else
         {
-            rb2d.velocity = Vector2.zero;
+            if (isMoving) { 
+                rb2d.velocity = Vector2.zero;
+                v = 0;
+                //Network.Move(v, h);
+                isMoving = false;
+                Debug.Log("Key Up");
+            }
+           
         }
-        Network.Move(v, h);
-    }
+
+        //Network.Move(v,h);
+
+	}
 }
