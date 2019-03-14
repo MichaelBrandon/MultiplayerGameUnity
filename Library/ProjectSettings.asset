@@ -616,12 +616,13 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
+    Collab: 1
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: 469f30f6-eb27-4833-a62d-019a995aa56f
+  cloudProjectId: 7f4896f2-a164-41a2-87e7-5fa0739d0674
   projectName: MultiPlayerGame
-  organizationId: jordantron
+  organizationId: aleginger
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0

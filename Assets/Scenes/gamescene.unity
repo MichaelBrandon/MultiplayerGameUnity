@@ -113,6 +113,39 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &145764349
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 145764350}
+  m_Layer: 0
+  m_Name: CoinGeneration
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &145764350
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 145764349}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.9961133, y: 1.6056279, z: -9.951855}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &279326995 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1820860665114996, guid: a9b9861e8c098dd43a609c23a83038cc,
+    type: 2}
+  m_PrefabInternal: {fileID: 1473357103}
 --- !u!1 &626055764
 GameObject:
   m_ObjectHideFlags: 0
@@ -237,6 +270,48 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2bad66734e00bc14baadc99054b8d40b, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1001 &1473357103
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4579180789983310, guid: a9b9861e8c098dd43a609c23a83038cc, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -4.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579180789983310, guid: a9b9861e8c098dd43a609c23a83038cc, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579180789983310, guid: a9b9861e8c098dd43a609c23a83038cc, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579180789983310, guid: a9b9861e8c098dd43a609c23a83038cc, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579180789983310, guid: a9b9861e8c098dd43a609c23a83038cc, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579180789983310, guid: a9b9861e8c098dd43a609c23a83038cc, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579180789983310, guid: a9b9861e8c098dd43a609c23a83038cc, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579180789983310, guid: a9b9861e8c098dd43a609c23a83038cc, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a9b9861e8c098dd43a609c23a83038cc, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1001 &1473660271
 Prefab:
   m_ObjectHideFlags: 0
@@ -284,3 +359,42 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1837594286303682, guid: 4f32185070172884686305318379f2b2,
     type: 2}
   m_PrefabInternal: {fileID: 1473660271}
+--- !u!114 &2055809051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2055809050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ac2a8465fc81c345aaef23467422631, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  JovanCoinGO: {fileID: 279326995}
+  points: 0
+  isDeactivated: 0
+--- !u!61 &2055809056
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2055809050}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.26, y: 1.58}
+    newSize: {x: 0.63, y: 0.79}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.26, y: 1.58}
+  m_EdgeRadius: 0
